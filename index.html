@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Crontab schedule generator</title>
+
+    <!-- Homegrown CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Content below -->
+
+        <div id="console">
+            <span class="console noselect">&nbsp;>&nbsp;</span>
+            <!-- Command output field. -->
+            <span class="console" id="output"></span>
+            <br/>
+            <!-- Comment field breaking down the command. -->
+            <span class="console noselect" id="outputComment"></span>
+        </div>
+
+        <form>
+
+            <div class="form-group">
+                <label for="minutes">Minutes</label>
+                <input type="minutes" class="form-control" id="minutes" placeholder="Enter minutes interval (0-59 or *)">
+            </div>
+            <div class="form-group">
+                <label for="hours">Hours</label>
+                <input type="hours" class="form-control" id="hours" placeholder="Enter hours interval (0-23 or *)">
+            </div>
+            <div class="form-group">
+                <label for="day">Day of month</label>
+                <input type="day" class="form-control" id="day" placeholder="Enter day of month (1-31 or *)">
+            </div>
+            <div class="form-group">
+                <label for="month_num">Month</label>
+                <input type="month_num" class="form-control" id="month_num" placeholder="Enter month interval (1-12 or *)">
+            </div>
+            <div class="form-group">
+                <label for="dow">Day of Week</label>
+                <input type="dow" class="form-control" id="dow" placeholder="Enter Day of Week interval (0-6 (Sunday = 0) or *)">
+            </div>
+            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        </form>
+
+        <!-- Bootstrap includes -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <!-- Homegrown JS -->
+        <script src="js/main.js"></script>
+
+    </div>
+</body>
+
+</html>
