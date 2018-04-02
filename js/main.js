@@ -138,7 +138,7 @@ $(document).ready(function () {
     if (isNumeric($(this).val()) && $(this).val() >= 0 && $(this).val() <= 6 || $(this).val() == "*") {
       outputDict["dow"] = $(this).val();
     } else {
-      outputDict["dow"] = "0";
+      outputDict["dow"] = "*";
     }
     compileConsoleStr();
   });
